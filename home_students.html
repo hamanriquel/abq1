@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ABQ Adult Learning Center</title>
   <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="img/png" href="img/WWW_ABQ_LOGO.png">
+    <!-- Favicon -->
+  <link rel="icon" type="img/png" href="img/WWW_ABQ_LOGO.png">
 </head>
 <body>
-
-<!-- ================= NAVBAR ================= -->
-<header class="navbar">
+<header class="navbar" >
   <div class="logo">
+
+<img src="img/WWW_ABQ_LOGO.png" style="width:20px; height:auto;" alt="logo">
     ABQ <span>Adult Learning Center</span>
   </div>
 
@@ -41,13 +42,12 @@
       <li class="menu-item">
         What We Do
         <ul class="submenu">
-          <li>Our Programs</li>
-          <li>Student Advocacy</li>
-          <li>Resources</li>
-          <li>Janice Pecos Scholarship</li>
+             <li class="has-children"><a href="home_we_do.html">Student Advocacy</a></li>
+             <li class="has-children"><a href="#.html">Resources</a></li>
+            <li class="has-children"><a href="#">Janice Pecos Scholarship</a></li>
+             <li class="has-children"><a href="home_Alumni.html">Alumni</a></li>
         </ul>
       </li>
-
       <li class="menu-item">
         How to Help
         <ul class="submenu">
@@ -86,19 +86,11 @@
               type="button"
               role="tab"
               aria-selected="true"
-              data-year="2023">
-        Class of 2023
+              data-year="2026">
+        Class of 2026
       </button>
 
       <button class="stories-year-btn"
-              type="button"
-              role="tab"
-              aria-selected="false"
-              data-year="2024">
-        Class of 2024
-      </button>
-    
-<button class="stories-year-btn"
               type="button"
               role="tab"
               aria-selected="false"
@@ -106,13 +98,21 @@
         Class of 2025
       </button>
     
+<button class="stories-year-btn"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-year="2024">
+        Class of 2024
+      </button>
+    
 
 <button class="stories-year-btn"
               type="button"
               role="tab"
               aria-selected="false"
-              data-year="2026">
-        Class of 2026
+              data-year="2023">
+        Class of 2023
       </button>
 
 
@@ -126,14 +126,14 @@
     <!-- IMAGE -->
     <div class="story-image">
       <img id="storyImg" src="img/s1.jpg" alt="Student">
-      <div class="story-badge" id="storyBadge">Class of 2023</div>
+      <div class="story-badge" id="storyBadge">Class of 2026</div>
     </div>
 
     <!-- TEXT -->
     <div class="story-text">
       <h2>Student Success Stories</h2>
 
-      <h3 id="storyName">Shante Bryant - Class of 2023</h3>
+      <h3 id="storyName">Shante Bryant - Class of 2026</h3>
       <p id="storyBio">
         "I remember walking into class on my first day..."
       </p>
@@ -230,58 +230,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     2025: [
       {
-         img: "img/s3.jpg",
-        name: "ANDRESS Warford - Class of 2025",
-        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+         img: "img/s12025.png",
+        name: "JERRY BALDONADO - Class of 2025",
+        bio: "At 17 years old, I dropped out of high school. Now, at 31, I want to make a difference in my family's lives by completing the program and attending college"
       },
       {
-       img: "img/s1.jpg",
-        name: "AAAAAAAA Bryant - Class of 2025",
-        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+       img: "img/s22025.png",
+        name: "ALISHA GARNEAUX - Class of 2025",
+        bio: "I used to be homeless, addicted, and lost in psychosis. I didn’t think I had a future. But with the help of Mr. Enka and Albuquerque Adult Learning Center Inc., I earned my HiSET diploma and found a new path. Now, I’m in college studying to become a Medical Assistant, with plans to continue on and become a Physician Assistant. My life has completely changed, and I’m proof that no matter how far you’ve fallen, it’s never too late to rise."
       },
       {
-       img: "img/s1.jpg",
-        name: "Shante Bryant - Class of 2024",
-        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
+       img: "img/s32025.png",
+        name: "ANTONIO SEGURA - Class of 2025",
+        bio: "In high school, I lost motivation when teachers gave up on me, and I ended up in the wrong crowd. After dropping out twice and struggling with self-doubt, a friend introduced me to Albuquerque Adult Learning Center Inc... With support and determination, I pushed through setbacks and earned my graduation certificate. Now, I’m headed to college and starting my own detailing business—proof that it’s never too late to turn things around"
       },
        {
-     img: "img/s3.jpg",
-        name: "Samantha Warford - Class of 2024",
-        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
-      },
-
-       {
-       img: "img/s1.jpg",
-        name: "Shante Bryant - Class of 2024",
-        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
-      },
-
-       {
-      img: "img/s3.jpg",
-        name: "Samantha Warford - Class of 2024",
-        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
-      },
-      {
-       img: "img/s1.jpg",
-        name: "Shante Bryant - Class of 2024",
-        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
-      },
-       {
-     img: "img/s3.jpg",
-        name: "Samantha Warford - Class of 2024",
-        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
-      },
-
-       {
-       img: "img/s1.jpg",
-        name: "Shante Bryant - Class of 2024",
-        bio: "I remember walking into class on my first day. Nadia was my teacher at that time..."
-      },
-
-       {
-      img: "img/s3.jpg",
-        name: "Samantha Warford - Class of 2024",
-        bio: "Why was it so important to obtain my HiSET? Recently I have become very selfish..."
+     img: "img/s42025.png",
+        name: "ZOHRA BARAKI- Class of 2025",
+        bio: "This is just the beginning."
       }
  ],
 
@@ -379,7 +345,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   };
 
-  let currentYear = 2023;
+  let currentYear = 2026;
   let index = 0;
   let intervalId = null;
 
@@ -476,7 +442,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // INIT
-  setYear(2023);
+  setYear(2026);
 
 });
 </script>
