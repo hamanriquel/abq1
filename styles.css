@@ -30,12 +30,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 10px 80px;
   background: var(--white);
   border-bottom: 4px solid var(--red);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 500;
 }
 
 .logo {
@@ -71,7 +71,7 @@ body {
 .menu-item {
   position: relative;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .menu-item:hover {
@@ -1016,7 +1016,7 @@ nav a {
   margin-top: 15px;
   background: #fdbd4a;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
@@ -1028,13 +1028,13 @@ nav a {
 
 /* Expandable text */
 .p-more {
-  margin-top: 15px;
-  font-size: 14px;
-  line-height: 1.6;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.4;
   color: #333;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .4s ease;
+  transition: max-height .2s ease;
 }
 
 /* Responsive */
