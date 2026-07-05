@@ -61,25 +61,119 @@
       <li class="menu-item"><a href="FAQ.html">FAQ </a></li>
     </ul>
   </nav>
+
 </header>
 
+<section class="faq">
 
-<center>
-<!-- Sección para insertar una imagen -->
-<section class="imagen-seccion">
-    <h2>Website is under construction</h2>
-    
-    <img 
-        src="img/try.jpg" 
-        alt="Descripción de la imagen"
-        width="600"
-    >
-    
-    <p>Texto descriptivo debajo de la imagen.</p>
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      I was in the program before, but I had to stop going. May I come back?
+    </button>
+    <div class="faq-answer">
+      <p>
+        Yes! Please call us today at <strong>505-907-9957</strong> to begin the
+        re-enrollment process. The process is different for each person depending
+        on how long it has been since they last attended class.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      How much does this program cost?
+    </button>
+    <div class="faq-answer">
+      <p>
+        All of our services are completely free to all individuals age 16 and
+        up! Click here for registration information.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      A friend of mine got a diploma online. May I do that?
+    </button>
+    <div class="faq-answer">
+      <p>
+        You can study for the high school equivalency test online, and our
+        program can help you get started with that. However, you cannot take
+        the real test online. A program that offers any test online is probably
+        just trying to take your money.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      What is the HiSET® Test and is it a real thing?
+    </button>
+    <div class="faq-answer">
+      <p>
+        In New Mexico there are two testing alternatives to receive your high
+        school equivalency credential: the GED® and the HiSET® Test. Passing
+        either test earns the same diploma from the state.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Can I still enroll in your program if I'm 16 or 17 years old?
+    </button>
+    <div class="faq-answer">
+      <p>
+        Yes. Before registering you will need an Underage Permission Form signed
+        by a parent or guardian.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      How long will it take me to get my diploma?
+    </button>
+    <div class="faq-answer">
+      <p>
+        Every student is different. On average, students earn their high school
+        equivalency credential in 6–12 months.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Where in Albuquerque can I go to take the GED® or HiSET® test?
+    </button>
+    <div class="faq-answer">
+      <p>
+        Each test has various testing locations throughout the state.
+      </p>
+    </div>
+  </div>
+
 </section>
 
+<script>
+const questions = document.querySelectorAll(".faq-question");
+
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+
+        const item = question.parentElement;
+
+        item.classList.toggle("active");
+
+    });
+});
+</script>
 
 
+
+  
 <footer class="site-footer">
 
   <div class="footer-container">

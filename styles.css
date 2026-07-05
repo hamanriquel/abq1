@@ -2153,3 +2153,43 @@ blockquote {
   font-weight: 700;
   border-radius: 30px;
 }
+
+.faq{
+    max-width:900px;
+    margin:50px auto;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.faq-question{
+    width:100%;
+    background:#A42018;   /* Rojo de la imagen */
+    color:white;
+    padding:18px;
+    border:none;
+    text-align:left;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.faq-question:hover{
+    background:#0b5ed7;
+}
+
+.faq-answer{
+    display:none;
+    background:#fff;
+    padding:18px;
+    line-height:1.6;
+    border-top:1px solid #ddd;
+}
+
+.faq-item.active .faq-answer{
+    display:block;
+}
